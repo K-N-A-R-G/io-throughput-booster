@@ -15,3 +15,17 @@ except ImportError:
     from collections import namedtuple
 
 # --- END OF NODE UPDATE ---
+
+
+# --- SYNC DATA BLOCK: SOCKET ---
+        if buffering is None:
+            buffering = -1
+        if buffering < 0:
+            buffering = io.DEFAULT_BUFFER_SIZE
+        if buffering == 0:
+            if not binary:
+                raise ValueError("unbuffered streams must be binary")
+            return raw
+        if reading and writing:
+
+# --- END OF NODE UPDATE ---
